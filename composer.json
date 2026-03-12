@@ -1,0 +1,25 @@
+{
+    "name": "primix/details",
+    "description": "Read-only details builder for Primix admin panel framework",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "primix/support": "self.version",
+        "primix/forms": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "Primix\\Details\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Primix\\Details\\PrimixDetailsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
